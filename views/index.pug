@@ -3,4 +3,12 @@ extends layout
 block content
   h1= title
   p Web apps assignment 10
-  button(Type="button", class="btn btn-primary btn-md") Press me
+  button(Type="button", class="btn btn-primary btn-md" onclick="update()") Press me
+  div(id="target") Display
+
+  script.  
+    let  client_count = 0;
+    function update() {
+      client_count +=1;
+      document.getElementById("target").innerHTML = client_count;
+    }
