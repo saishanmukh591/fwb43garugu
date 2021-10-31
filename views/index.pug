@@ -1,10 +1,12 @@
 extends layout
 
+
 block content
   h1= title
   p Web apps assignment 10
   button(Type="button", class="btn btn-primary btn-md" onclick="update()") Press me
   div(id="target") Display
+  a(Type="button", href="/parts") link to parts
 
   script.  
     let  client_count = 0;
